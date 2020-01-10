@@ -62,4 +62,4 @@ Please direct other correspondence to Kate Rakelly: rakelly@eecs.berkeley.edu
 --------------------------------------
 
 #### Additional Configuration Necessary
-The environment might not install correctly because of mujoco_py, in which case you'll need to manually install mujoco_py. Do not clone with --recurse-submodules (you'll get a publickey error). Instead, clone normally and then replace the link to the rand_param_envs module in `.gitmodules` to use the https addresss https://github.com/dennisl88/rand_param_envs.git, then run `git submodule init; git submodule update --recursive`.
+The environment might not install correctly because of mujoco_py, in which case you'll need to manually install mujoco_py. Do not clone with --recurse-submodules (you'll get a publickey error). Instead, clone normally and then replace the link to the rand_param_envs module in `.gitmodules` to use the https addresss https://github.com/dennisl88/rand_param_envs.git, then run `git submodule init; git submodule update --recursive`. Once you have `rand_param_envs`, cd into the top-level `rand_param_envs` directory and run `python setup.py install`.
