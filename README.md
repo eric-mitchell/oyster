@@ -58,3 +58,8 @@ We recommend `viskit` for visualizing learning curves: https://github.com/vitchy
 If you spot a bug or have a problem running the code, please open an issue.
 
 Please direct other correspondence to Kate Rakelly: rakelly@eecs.berkeley.edu
+
+--------------------------------------
+
+#### Additional Configuration Necessary
+The environment might not install correctly because of mujoco_py, in which case you'll need to manually install mujoco_py and pyopengl with pip, as well as maybe run `pip install --upgrade torch`. Do not clone with --recurse-submodules (you'll get a publickey error). Instead, clone normally and then replace the link in the rand_param_envs module to use the https addresss https://github.com/dennisl88/rand_param_envs.git. 
